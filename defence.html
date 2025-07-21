@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defence & Security | Autonomous Technologies</title>
+    <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navlogo"></div>
+             <div class="panel-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="navbar2">
+            <div class="itemsbar2">
+                <a href="aerostructures.html">AEROSTRUCTURES & AERO-ENGINES</a>
+                <a href="airborne.html">AIRBORNE PLATFORM AND SYSTEMS</a>
+                <a href="defence.html">DEFENCE & SECURITY</a>
+                <a href="landmobility.html">LAND MOBILITY</a>
+            </div>
+        </div>
+    </header>
+    <div class="hero1">
+        <div class="mage">
+        <h1>WEAPONS, SENSORS AND C41 SYSTEMS</h1>
+        <p>The First Line of Defence on Future Battlefields</p>
+        </div>
+    </div>
+    <div class="hero2">
+        <h1>Weapons, Sensors and C4I Systems</h1>
+        <p>Tata Advanced Systems has built up an unmatched depth of capability in integration of various sensors, weapons with cutting edge technologies to deliver complete platform solutions for the armed</p>
+        <p>and paramilitary forces, homeland security agencies and state police forces. The Tatas have played a vital role in delivering key solutions across the technology spectrum for vital military programs of</p>
+        <p>national importance.</p>
+        <br>
+        <p>Today, Tata Advanced Systems is a key player in the indigenous Design, Development, Production, Integration, Supply and Life-Cycle support of mission critical defence systems of strategic</p>
+        <p>importance..</p>
+    </div>
+    <div class="hero3">
+        <div class="back3">
+            <div class="first">
+                <h1>Alpha 1</h1>
+                <p>self combat drone</p>
+            </div>
+            <div class="second">
+                <h1>Beta 2</h1>
+                <p>delivery prototype</p>
+            </div>
+            <div class="third">
+                <h1>Gamma 3 </h1>
+                <p>Military equipped</p>
+            </div>
+            <div class="forth">
+                <h1>Delta 4</h1>
+                <p>Survivvelence expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero4">
+        <h1>Physical and Cyber Security</h1>
+        <p>Tata Advanced Systems provides innovative and state-of-the-art solutions in areas of Critical Infrastructure, Border Protection, Urban Security & Surveillance, Transportation, Law Enforcement and for</p>
+        <p>ensuring adequate preparedness for natural disasters. We provide Integrated Security Solutions that enhances situational awareness and actionable intelligence for protection of critical assets,</p>
+        <p>infrastructure and people.</p>
+        <br>
+        <p>Tata Advanced Systems has a strong pedigree in the field of Cyber Security and this is an especially vital segment on the future battlefield with the increased use of software and digital technologies on</p>
+        <p>military platforms. Our Cyber Security Practice has built up unmatched domain knowledge and expertise in protection of intellectual property, curbing cyber intrusions and securing highly sensitive</p>
+        <p>data.</p>
+    </div>
+    <div class="hero5">
+        <div class="headers5">
+            <div class="first5">
+                <h1>PHYSICAL SECURITY</h1>
+                <p>TATA ADVANCED SYSTEMS PROVIDES INNOVATIVE AND STATE-OF-THE-ART</p>
+                <p>SOLUTIONS IN THE AREAS OF CRITICAL INFRASTRUCTURE, BORDER PROTECTION</p>
+                <p>URBAN SECURITY AND SURVEILLANCE, TRANSPORTATION, LAW ENFORCEMENT..</p>
+            </div>
+            <div class="second5">
+                <h1>CYBER SECURITY</h1>
+                <p>PREPARE YOUR ENTERPRISE TO GROW FEARLESSLY IN TODAY’S DIGITALLY</p>
+                <p>TRANSFORMING ECOSYSTEM AND BE FUTURE-READY AGAINST ALL UNKNOWN AND</p>
+                <p>KNOWN THREATS. THE CYBER SECURITY PRACTICE OF TATA ADVANCED SYSTEMS..</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footpanel">
+            <ul>
+                <p>Reach us </p>
+                <br><br>
+                <a>TASL Registered Office:</a>
+                <a>Hardware Park Plot No.21,</a>
+                <a>Sy No.1/1 Imarat Kancha Raviryala Village,</a>
+                <a>Maheshwaram Mandal,</a>
+                <a>Hyderabad – 501 218,</a>
+                <a>Telangana, India.</a>
+                <br><br><br><br>
+                <a>Dr . Gopaldas Bhawan, 14th Floor,</a>
+                <a>28 Barakhamba Road,</a>
+                <a>New Delhi - 110001</a>
+                <br><br>
+            </ul>
+            <ul>
+                <p>About Us</p>
+                <br><br>
+                <a>What We Do</a>
+                <a>What We Value</a>
+                <a>Joint Venture & Subsidiaries</a>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>Policies/Documents/Financials</p>
+            </ul>
+            <ul>
+                <p>AEROSTRUCTURES & AERO-ENGINES</p>
+                <br>
+                <a>Customers & Programs</a>
+                <a>Centres of Excellence (CoEs)</a>
+                <a>Capabilities</a>
+            </ul>
+            <ul>
+                <p>AIRBORNE PLATFORMS & SYSTEMS</p>
+                <br><br>
+                <a>Unmanned Aerial Systems</a>
+                <a>Fixed and Rotary Wing Platforms</a>
+                <a>Fixed and Rotary Wing Platforms</a>
+                <a>Mission Systems and Avionics</a>
+                <a>Satellite Integration</a>
+                <a>Missile Systems & Parts</a>
+            </ul>
+
+        </div>
+    </footer>
+     <script>
+        document.querySelectorAll('.panel-items p').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.panel-items p').forEach(p => p.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        const style = document.createElement('style');
+        style.innerHTML = `
+.panel-items p.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+    color: #007bff;
+}`;
+        document.head.appendChild(style);
+
+        
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('click', () => {
+                const date = box.querySelector('h2')?.innerText || 'Unknown Date';
+                const title = box.querySelector('p')?.innerText || 'No Headline';
+                alert(`Opening news from ${date.trim()}:\n${title.trim()}`);
+            });
+        });
+
+        
+        const scrollTopBtn = document.createElement('button');
+        scrollTopBtn.innerText = "↑ Top";
+        scrollTopBtn.style.cssText = `
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    background:#333;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    display:none;
+    z-index:999;`;
+        document.body.appendChild(scrollTopBtn);
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+
+        const toggleColorBtn = document.createElement('button');
+        toggleColorBtn.innerText = "";
+        toggleColorBtn.style.cssText = `
+    position:fixed;
+    top:20px;
+    right:20px;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    z-index:999;
+`;
+        document.body.appendChild(toggleColorBtn);
+
+        let isBlack = true;
+        toggleColorBtn.addEventListener('click', () => {
+            const textSection = document.querySelector('.textleadership');
+            if (textSection) {
+                textSection.style.color = isBlack ? 'white' : 'black';
+                isBlack = !isBlack;
+            }
+        });
+    </script>
+
+    
+</body>
+</html>

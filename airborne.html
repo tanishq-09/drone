@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airborne Platforms and Systems | Autonomous Technologies</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navlogo"></div>
+            <div class="panel-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="navbar2">
+            <div class="itemsbar2">
+                <a href="aerostructures.html">AEROSTRUCTURES & AERO-ENGINES</a>
+                <a href="airborne.html">AIRBORNE PLATFORM AND SYSTEMS</a>
+                <a href="defence.html">DEFENCE & SECURITY</a>
+                <a href="landmobility.html">LAND MOBILITY</a>
+            </div>
+        </div>
+    </header>
+    <div class="herobox">
+        <div class="text">
+            <h1>Airdrone & Systems</h1>
+            <p>Trusted Strategic partner for Platform Solutions across Drones and spy panels .</p>
+        </div>
+    </div>
+    <div class="hero2">
+        <h1>Airborne Platforms & Systems</h1>
+        <p>At Tata Advanced Systems, we bring together world-class capabilities, cutting-edge infrastructure, and a highly skilled workforce to drive the local manufacturing and final assembly of both Fixed and</p>
+        <p>Rotary Wing platforms.</p>
+        <br>
+        <p>With a strong commitment to Make-in-India, we actively partner with global OEMs to bid for large-scale platform projects, aligning with the Ministry of Defence’s (MoD) vision. Our expertise ensures</p>
+        <p>seamless integration, advanced value addition, and superior quality, reinforcing India's self-reliance in aerospace and defence manufacturing.</p>
+    <div class="hero3">
+        <div class="heading">
+            <button>UNMANNER AERIAL SYSTEMSs</button>
+            <button>FIXED AND ROTARY WINGS PLATFORMS</button>
+            <button>MISSION SYSYTEMS AND AVIONICS</button>
+            <button>SATELLITE INTEGRATION</button>
+        </div>
+        <div class="box">
+            <div class="leftside">
+                <h1>UNMANNED AERIAL SYSTEMS</h1>
+                <p>Tata Advanced Systems has developed several Unmanned Aerial Systems which</p>
+                <p>are already in use or undergoing trials with the Armed and Paramilitary Forces and</p>
+                <p>State Police Forces. We are focused on offering cutting edge solutions to meet</p>
+                <p>emerging Remotely Piloted Aircraft (RPA) / Unmanned Aerial Vehicle (UAV)</p>
+                <p>requirements from Defence and Security forces around the world.</p>            
+            </div>
+            <div class="rightside"></div>
+        </div>
+    </div>
+
+    </div>
+    
+    <footer>
+        <div class="footpanel">
+            <ul>
+                <p>Reach us </p>
+                <br><br>
+                <a>TASL Registered Office:</a>
+                <a>Hardware Park Plot No.21,</a>
+                <a>Sy No.1/1 Imarat Kancha Raviryala Village,</a>
+                <a>Maheshwaram Mandal,</a>
+                <a>Hyderabad – 501 218,</a>
+                <a>Telangana, India.</a>
+                <br><br><br><br>
+                <a>Dr . Gopaldas Bhawan, 14th Floor,</a>
+                <a>28 Barakhamba Road,</a>
+                <a>New Delhi - 110001</a>
+                <br><br>
+            </ul>
+            <ul>
+                <p>About Us</p>
+                <br><br>
+                <a>What We Do</a>
+                <a>What We Value</a>
+                <a>Joint Venture & Subsidiaries</a>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>Policies/Documents/Financials</p>
+            </ul>
+            <ul>
+                <p>AEROSTRUCTURES & AERO-ENGINES</p>
+                <br>
+                <a>Customers & Programs</a>
+                <a>Centres of Excellence (CoEs)</a>
+                <a>Capabilities</a>
+            </ul>
+            <ul>
+                <p>AIRBORNE PLATFORMS & SYSTEMS</p>
+                <br><br>
+                <a>Unmanned Aerial Systems</a>
+                <a>Fixed and Rotary Wing Platforms</a>
+                <a>Fixed and Rotary Wing Platforms</a>
+                <a>Mission Systems and Avionics</a>
+                <a>Satellite Integration</a>
+                <a>Missile Systems & Parts</a>
+            </ul>
+
+        </div>
+    </footer>
+     <script>
+        document.querySelectorAll('.panel-items p').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.panel-items p').forEach(p => p.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        const style = document.createElement('style');
+        style.innerHTML = `
+.panel-items p.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+    color: #007bff;
+}`;
+        document.head.appendChild(style);
+
+        
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('click', () => {
+                const date = box.querySelector('h2')?.innerText || 'Unknown Date';
+                const title = box.querySelector('p')?.innerText || 'No Headline';
+                alert(`Opening news from ${date.trim()}:\n${title.trim()}`);
+            });
+        });
+
+        
+        const scrollTopBtn = document.createElement('button');
+        scrollTopBtn.innerText = "↑ Top";
+        scrollTopBtn.style.cssText = `
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    background:#333;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    display:none;
+    z-index:999;`;
+        document.body.appendChild(scrollTopBtn);
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+
+        const toggleColorBtn = document.createElement('button');
+        toggleColorBtn.innerText = "";
+        toggleColorBtn.style.cssText = `
+    position:fixed;
+    top:20px;
+    right:20px;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    z-index:999;
+`;
+        document.body.appendChild(toggleColorBtn);
+
+        let isBlack = true;
+        toggleColorBtn.addEventListener('click', () => {
+            const textSection = document.querySelector('.textleadership');
+            if (textSection) {
+                textSection.style.color = isBlack ? 'white' : 'black';
+                isBlack = !isBlack;
+            }
+        });
+    </script>
+
+    
+</body>
+</html>

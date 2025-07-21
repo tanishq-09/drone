@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Technologies Advanced System Private Limited</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="navlogo"></div>
+            <div class="panel-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </div>
+ 
+        <div class="navbar2">
+            <div class="itemsbar2">
+                <a href="aerostructures.html">AEROSTRUCTURES & AERO-ENGINES</a>
+                <a href="airborne.html">AIRBORNE PLATFORM AND SYSTEMS</a>
+                <a href="defence.html">DEFENCE & SECURITY</a>
+                <a href="landmobility.html">LAND MOBILITY</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section"></div>
+
+    <div class="service">
+        <div class="leftservice">
+            <h1><b>Our Product & Services</b></h1><br><br>
+            <h2><b>Drones and Equipment</b></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>Blanditiis placeat odit, natus explicabo officiis unde quisquam</p>
+            <p>esse sapiente. Qui eligendi repellat sapiente! Laborum nam placeat</p>
+            <p>natus ea veniam nobis assumenda!</p>
+        </div>
+        <div class="rightservice"></div>
+    </div>
+
+    <div class="leadership">
+        <div class="textleadership">
+            <h1>Leadership that Inspires</h1>
+            <p>For over 100 years, the Tata group has been led by visionaries</p>
+            <p>who have stayed true to the vision of the founder Sir Jamsetji Tata.</p>
+            <p>Our vision articulates the Group's values and ideals that guide and</p>
+            <p>govern the conduct of our companies as well as our colleagues in all</p>
+            <p>matters relating to business.</p>
+        </div>
+    </div>
+
+    <div class="news-heading">
+        <div class="headingnews">
+            <p>News & Updates</p>
+        </div>
+        <div class="covernews">
+            <div class="box" onclick="openNewsModal('22nd May 2025', 'news 1')">
+                <h2 class="transparent-heading">22nd May 2025</h2>
+                <p class="transparent-heading">news 2</p>
+            </div>
+
+            <div class="box" onclick="openNewsModal('30th May 2025', 'news 2')">
+                <h2 class="transparent-heading">30th May 2025</h2>
+                <p class="transparent-heading">news 2</p>
+            </div>
+
+            <div class="box" onclick="openNewsModal('31st May 2025', 'news 3')">
+                <h2 class="transparent-heading">31st May 2025</h2>
+                <p class="transparent-heading">news 2</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footpanel">
+            <ul>
+                <p>Reach us</p><br><br>
+                <a>TASL Registered Office:</a>
+                <a>Hardware Park Plot No.21,</a>
+                <a>Sy No.1/1 Imarat Kancha Raviryala Village,</a>
+                <a>Maheshwaram Mandal,</a>
+                <a>Hyderabad – 501 218,</a>
+                <a>Telangana, India.</a><br><br><br><br>
+                <a>Dr. Gopaldas Bhawan, 14th Floor,</a>
+                <a>28 Barakhamba Road,</a>
+                <a>New Delhi - 110001</a><br><br>
+            </ul>
+            <ul>
+                <p>About Us</p><br><br>
+                <a>What We Do</a>
+                <a>What We Value</a>
+                <a>Joint Venture & Subsidiaries</a>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>Policies/Documents/Financials</p>
+            </ul>
+            <ul>
+                <p>AEROSTRUCTURES & AERO-ENGINES</p><br>
+                <a>Customers & Programs</a>
+                <a>Centres of Excellence (CoEs)</a>
+                <a>Capabilities</a>
+            </ul>
+            <ul>
+                <p>AIRBORNE PLATFORMS & SYSTEMS</p><br><br>
+                <a>Unmanned Aerial Systems</a>
+                <a>Fixed and Rotary Wing Platforms</a>
+                <a>Mission Systems and Avionics</a>
+                <a>Satellite Integration</a>
+                <a>Missile Systems & Parts</a>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.panel-items p').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.panel-items p').forEach(p => p.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        const style = document.createElement('style');
+        style.innerHTML = `
+.panel-items p.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+    color: #007bff;
+}`;
+        document.head.appendChild(style);
+
+        
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('click', () => {
+                const date = box.querySelector('h2')?.innerText || 'Unknown Date';
+                const title = box.querySelector('p')?.innerText || 'No Headline';
+                alert(`Opening news from ${date.trim()}:\n${title.trim()}`);
+            });
+        });
+
+        
+        const scrollTopBtn = document.createElement('button');
+        scrollTopBtn.innerText = "↑ Top";
+        scrollTopBtn.style.cssText = `
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    background:#333;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    display:none;
+    z-index:999;`;
+        document.body.appendChild(scrollTopBtn);
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+
+        const toggleColorBtn = document.createElement('button');
+        toggleColorBtn.innerText = "";
+        toggleColorBtn.style.cssText = `
+    position:fixed;
+    top:20px;
+    right:20px;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    z-index:999;
+`;
+        document.body.appendChild(toggleColorBtn);
+
+        let isBlack = true;
+        toggleColorBtn.addEventListener('click', () => {
+            const textSection = document.querySelector('.textleadership');
+            if (textSection) {
+                textSection.style.color = isBlack ? 'white' : 'black';
+                isBlack = !isBlack;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

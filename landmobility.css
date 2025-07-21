@@ -1,0 +1,255 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color:antiquewhite;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    background-color: antiquewhite;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.navlogo {
+    background-image: url("logofile.webp");
+    height: 50px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel-items {
+    display: flex;
+    gap: 40px;
+    background-color: transparent;
+}
+
+.panel-items a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.panel-items a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+}
+.navbar2 {
+    width: 100vw; /* Full screen width */
+    height: 40px;
+    background-color: rgb(203, 216, 203); /* Light green */
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+.itemsbar2 {
+    display: flex;
+    gap: 30px;
+    font-size: 0.8rem;
+    padding-left: 560px;
+    background-color: transparent;
+}
+
+.itemsbar2 p {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #222;
+    background-color: transparent;
+}
+
+.itemsbar2 a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: transparent; /* Ensure no background */
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.itemsbar2 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.itemsbar2 a:hover {
+    font-weight: 600;
+    color: #007bff;
+    background-color: transparent;
+}
+
+.itemsbar2 a:hover::after {
+    width: 100%;
+}
+.banner{
+    background-image: url("bannerlast.webp");
+    height: 600px;
+    background-size: cover;
+}
+.text1{
+    padding-top: 400px;
+    padding-left :80px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    
+    background-color: transparent;
+}
+.text1 h1{
+    background-color: transparent;
+    font-weight: 4;
+}
+.hero1{
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.hero1 h1{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+.hero1 p{
+    padding-left: 90px;
+}
+.hero2{
+    display: flex;
+    padding-left: 120px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+
+}
+#box{
+    height: 200px;
+    width: 320px;
+    border: 2px solid transparent;
+
+}
+#box i{
+    font-size: 80px;
+    text-align: center;
+    line-height: 40px;
+    padding-left: 0px;
+}
+#box h3{
+    padding-top: 50px;
+}
+#box:hover {
+  transform: scale(1.1);       
+  background-color:antiquewhite;    
+}
+.thirdtext{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+    text-decoration: underline;
+}
+.recruit{
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    padding-bottom: 80px;
+
+}
+#boxnew{
+    height: 300px;
+    width: 420px;
+    border: 2px solid black;
+}
+.hero4{
+    background-image: url("merged.jpg");
+    height: 400px;
+    background-size: cover;
+}
+.back3{
+    background-color: transparent;
+    display: flex;
+    padding-left: 90px;
+    padding-top: 20px;
+}
+.back3 h1{
+    background-color: transparent;
+}
+.back3 p{
+    background-color: transparent;
+}
+.first{
+    background-color: transparent;
+    margin-right: 280px;
+}
+.second{
+    background-color: transparent;
+    margin-right: 240px;
+}
+.third{
+    background-color: transparent;
+    margin-right: 250px;
+}
+.forth{
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+.footpanel{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(63,63,63);
+    background-color:rgb(63, 63, 63);
+    height: 500px;
+    width: 1470px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.footpanel ul p{
+    padding-left: 40px;
+    font-size: 1.3rem;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+.footpanel ul{
+    padding-top: 100px;
+    background-color: rgb(63, 63, 63);
+
+}
+.footpanel ul a{
+    display: block;
+    font-size: 1rem;
+    padding-left :40px;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    
+}
+.footpanel2{
+    background-color: rgb(63, 63, 63);
+}
+.divider{
+    width: 2px;
+    background-color: white;
+    height: auto;
+}

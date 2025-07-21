@@ -1,0 +1,259 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color:antiquewhite;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    background-color: antiquewhite;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.navlogo {
+    background-image: url("logo.jpeg");
+    height: 50px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel-items {
+    display: flex;
+    gap: 40px;
+    background-color: transparent;
+}
+
+.panel-items a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.panel-items a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+}
+.navbar2 {
+    width: 100vw; /* Full screen width */
+    height: 40px;
+    background-color: rgb(203, 216, 203); /* Light green */
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+.itemsbar2 {
+    display: flex;
+    gap: 30px;
+    font-size: 0.8rem;
+    padding-left: 560px;
+    background-color: transparent;
+}
+
+.itemsbar2 p {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #222;
+    background-color: transparent;
+}
+
+.itemsbar2 a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: transparent; /* Ensure no background */
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.itemsbar2 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.itemsbar2 a:hover {
+    font-weight: 600;
+    color: #007bff;
+    background-color: transparent;
+}
+
+.itemsbar2 a:hover::after {
+    width: 100%;
+}
+.hero-section{
+    width: 1470px;
+    height: 700px;
+    background-image: url("bannerabout.avif");
+    background-size: cover;
+
+}
+.hero-section h2{
+    background-color: transparent;
+    color: white    ;
+    padding-left: 30px;
+    padding-top: 600px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.hero-section p{
+    background-color: transparent;
+    color: white;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.About-us{
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+}
+.About-us h1{
+    padding-bottom: 30px;
+}
+.About-us h3{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.headerboards{
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 50px;
+}
+.director{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+.box{
+    border:2px solid black;
+    height: 300px;
+    width: 23%;
+    background:transparent;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+.director2{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding-bottom: 60px;
+}
+.director{
+    padding-bottom: 30px;
+}
+.ourstory{
+    padding-left: 120px;
+    padding-top: 150px;
+    background-image: url("ourstory.webp");
+    opacity: 70%;
+    height:300px;
+    background-size: cover;
+    color: black;
+
+}
+.ourstory h1{
+    background-color: transparent;
+    font-size: 40px;
+
+}
+.ourstory p{
+    background-color: transparent;
+
+    font-size: 20px;
+}
+.value{
+    display: flex;
+}
+.do{
+    padding-top: 130px;
+    padding-left: 130px;
+    height: 300px;
+    background-size: cover;
+    color: black;
+}
+.do h1{
+    background-color: transparent;
+    text-decoration: underline;
+}
+.do p{
+    background-color: transparent;
+}
+.do h2{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: transparent;
+
+}
+.do1{
+    display: flex;
+    align-items: center;
+    flex-wrap: flex;
+    gap: 50px;
+}
+.domage{
+    background-image: url(doing.jpeg);
+    height: 300px;
+    width: 450px;
+    background-size: cover;
+    
+}
+.footpanel{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(63,63,63);
+    background-color:rgb(63, 63, 63);
+    height: 500px;
+    width: 1470px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.footpanel ul p{
+    padding-left: 40px;
+    font-size: 1.3rem;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+.footpanel ul{
+    padding-top: 100px;
+    background-color: rgb(63, 63, 63);
+
+}
+.footpanel ul a{
+    display: block;
+    font-size: 1rem;
+    padding-left :40px;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    
+}
+.footpanel2{
+    background-color: rgb(63, 63, 63);
+}
+.divider{
+    width: 2px;
+    background-color: black;
+    height: auto;
+}
